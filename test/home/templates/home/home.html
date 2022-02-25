@@ -1,0 +1,15 @@
+{%extends 'home/layout.html'%}
+{%block content%}
+    <form action="" method="post">
+        {{form.hidden_tag()}}
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">First Name</label>
+            {{ form.firstname(class="form-control") }}
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput2" class="form-label">Last Name</label>
+            {{ form.lastname(class="form-control") }}
+        </div>
+        {{form.submit(class="btn btn-primary")}}
+    </form>
+{%endblock content%}
